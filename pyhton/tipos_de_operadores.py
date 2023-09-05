@@ -64,20 +64,23 @@ saldo %= 200 #atribui com soma no valor da variável
 saldo **= 200 #atribui com soma no valor da variável
 
 
-# OPERADORES LÓGICOS : resultado booleano 
+# OPERADORES LÓGICOS : resultado bool (V/F)
 saldo = 1000
 saque = 200
 limite = 100
 
-saldo >= saque and saque <= limite #AND 
+saldo >= saque and saque <= limite #operador E: and; TRUE se todos são true
+saldo >= saque or saque <= limite #operador OU: or; TRUE se um for true
+not 100>150 #operador negação: not
 
 
-# OPERADORES DE IDENTIDADE
+# OPERADORES DE IDENTIDADE : comparar se dois objetos ocupam a mesma posição na memória; resultao bool (V?F)
+saldo, limite = 200,200
+saldo is limite
+saldo is not limite 
 
-# OPERADORES DE ASSOCIAÇÃO
-
-
-
-
-
-
+# OPERADORES DE ASSOCIAÇÃO : verifica se um objeto está presente em uma sequência
+saques = [1500, 100]
+200 in saques
+100 not in saques
+1500 in saques 
